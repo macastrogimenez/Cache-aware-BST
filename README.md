@@ -1,6 +1,6 @@
 # Right-skewed Binary Search Trees
 
-Right-skewed BSTs (where nodes mostly chain off the right child, with few or no left children) can beat balanced BSTs on cache performance for certain workloads, for reasons that come from memory layout, not algorithmic complexity:
+Right-skewed BSTs (where nodes mostly chain off the right child, with few or no left children) can beat balanced Binary Search Trees on cache performance for certain workloads, for reasons that come from memory layout, not algorithmic complexity:
 
 Why it helps
 
