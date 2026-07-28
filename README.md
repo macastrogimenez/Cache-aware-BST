@@ -1,4 +1,15 @@
-# Final exam project - Applied algorithms 2025
+# Right-skewed Binary Search Trees
+
+Right-skewed BSTs (where nodes mostly chain off the right child, with few or no left children) can beat balanced BSTs on cache performance for certain workloads, for reasons that come from memory layout, not algorithmic complexity:
+
+Why it helps
+
+Layout matches allocation order. If nodes are allocated with a simple arena/bump allocator and inserted in increasing key order, the right-skewed chain ends up physically contiguous (or close together) in memory. The tree effectively becomes array-like.
+Predictable pointer-chasing. Walking the right spine is a single-direction chain of dereferences, like a linked list, rather than branching unpredictably left/right into scattered heap regions. Prefetchers handle single-direction chains far better than the essentially random jumps a balanced tree makes between parent and child nodes.
+Fewer cache-line crossings for sequential access. In-order traversal, successor queries, or range scans on a right-skewed tree touch memory much like scanning an array — one cache line after another — instead of repeatedly jumping between distant nodes.
+
+## Report
+[Click here](https://github.com/macastrogimenez/Cache-aware-BST/blob/master/Report.pdf)
 
 ## Running the project
 
