@@ -1,0 +1,77 @@
+[project]
+name = "itu-aa-final"
+version = "0.0.0"
+description = "Final exam project for ITU, course Applied Algorithms"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "matplotlib>=3.10.8",
+    "numpy>=2.3.5",
+    "pandas>=2.3.3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "ruff>=0.14.9",
+    "ty>=0.0.5",
+]
+
+[tool.ruff]
+line-length = 100
+indent-width = 4
+target-version = "py314"
+
+[tool.ruff.lint]
+# See https://docs.astral.sh/ruff/rules/
+select = [
+    "B",
+    "I",
+    "ERA",
+    "F",
+    "E",
+    "S",
+    "RUF",
+    "SIM",
+    "UP",
+    "N",
+    "ASYNC",
+    "FBT",
+    "A",
+    "C4",
+    "C90",
+    "DTZ",
+    "T",
+    "ISC",
+    "PIE",
+    "PT",
+    "RET",
+    "TID",
+    "ARG",
+    "PTH",
+    "PERF",
+    "FURB"
+]
+
+ignore = [
+    # Allow use of `assert`
+    "S101",
+    # Allow use of `print()`
+    "T201",
+    # The vast majority of violations for this rule
+    # are comments or f-strings. Don't care.
+    "E501",
+    # Known for false positives
+    "S603",
+]
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.lint.flake8-tidy-imports]
+# Disallow all relative imports.
+ban-relative-imports = "all"

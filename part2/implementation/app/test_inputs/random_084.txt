@@ -1,0 +1,44 @@
+128
+01101010011110001010110001111000010110110101010001000010010011000011100000110000011101001111101111101101000010101101000101001010
+20
+rank 30
+rank 87
+rank 28
+rank 71
+rank 123
+rank 118
+rank 122
+rank 1
+rank 9
+rank 42
+rank 65
+rank 83
+rank 33
+rank 0
+rank 94
+rank 3
+rank 30
+rank 111
+rank 12
+rank 3
+20
+select 47
+select 49
+select 19
+select 13
+select 44
+select 1
+select 37
+select 1
+select 12
+select 5
+select 13
+select 27
+select 47
+select 53
+select 5
+select 30
+select 59
+select 33
+select 28
+select 58

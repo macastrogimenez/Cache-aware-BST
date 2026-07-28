@@ -1,0 +1,3 @@
+Urszula Klaudia Matysiak <urma@itu.dk>
+Miguel Angel Castro Gimenez <migca@itu.dk>
+Tomas Vemola <tvem@itu.dk>

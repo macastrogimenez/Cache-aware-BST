@@ -1,0 +1,28 @@
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+
+# Ignore build artifacts
+*.jar
+*.class
+
+# macOS
+.DS_Store
+
+# devcontainer GH CLI
+_temp.token
+
+# property-based testing database
+.jqwik-database
+
+# generated
+generated
+output.*
+
+# cache
+__pycache__
+
+
+temp

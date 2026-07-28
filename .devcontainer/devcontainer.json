@@ -1,0 +1,48 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "Ubuntu",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/base:noble",
+	"features": {
+        "ghcr.io/devcontainers/features/java": {
+            "version": 21,
+            "jdkDistro": "tem",
+            "gradleVersion": "9.2"
+        },
+		"ghcr.io/devcontainers/features/common-utils:2": {},
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.debugpy",
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"charliermarsh.ruff",
+				"github.vscode-github-actions",
+				"tamasfe.even-better-toml"
+			]	
+		}
+	},
+
+	"postCreateCommand": "./.devcontainer/post_create_command.sh",
+
+	// Mount the workspace folder one level higher than the git repo
+	"workspaceMount": "source=${localWorkspaceFolder}/../,target=/workspaces,type=bind",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"mounts": [
+		"source=${localEnv:HOME},target=/localhome,type=bind,consistency=cached"
+	],	
+
+    "remoteEnv": {
+        "UV_LINK_MODE": "copy",
+        "UV_VENV_CLEAR": "1"
+    }
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}

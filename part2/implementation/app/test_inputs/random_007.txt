@@ -1,0 +1,44 @@
+64
+1010111111110010010000000111111111001001011001101000010111101011
+20
+rank 36
+rank 38
+rank 13
+rank 18
+rank 55
+rank 2
+rank 47
+rank 57
+rank 19
+rank 7
+rank 44
+rank 39
+rank 51
+rank 37
+rank 11
+rank 10
+rank 52
+rank 46
+rank 18
+rank 51
+20
+select 12
+select 19
+select 30
+select 23
+select 8
+select 23
+select 32
+select 1
+select 19
+select 19
+select 2
+select 24
+select 27
+select 21
+select 7
+select 26
+select 8
+select 29
+select 19
+select 11

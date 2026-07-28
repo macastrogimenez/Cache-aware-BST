@@ -1,0 +1,44 @@
+64
+0101100010000110110010011101011100111101000011000010111101111111
+20
+rank 55
+rank 35
+rank 26
+rank 4
+rank 28
+rank 31
+rank 63
+rank 47
+rank 33
+rank 45
+rank 52
+rank 60
+rank 36
+rank 59
+rank 34
+rank 62
+rank 20
+rank 59
+rank 37
+rank 20
+20
+select 30
+select 1
+select 27
+select 23
+select 34
+select 20
+select 20
+select 18
+select 7
+select 16
+select 13
+select 9
+select 10
+select 11
+select 24
+select 12
+select 2
+select 33
+select 1
+select 2
